@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+       <!-- GENERAL INFO -->
+       <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'login.js') }}" ></script>
+    <title>
+       Covid Thinkers | Login
+    </title>
+    <link href=".\css\apps.css" type="text/css" rel="stylesheet">
+       <link href="C:\Users\luvku\CS 2019\covid.jpg" type="image/x-icon" rel="shortcut icon" >
+       <meta charset="utf-8">
+       <meta name="description" content="login for covid Thinkers">
+
+   </head>
+   <body>
+      <h1>
+         Login for Covid Thinkers
+      </h1>
+      <form  name = "login" action = "http://localhost:5000/login" method = "POST">
+         <p>First Name:<input type = "text" placeholder="FIRST NAME" name = "name" required/></p>
+         <p>Email Id:<input type = "text" placeholder="EMAIL ID" name = "email" required/></p>
+         <p>Enter Password:<input type = "password"  name = "password" required/></p>
+         <p><input  type = "submit"  value = "submit" /></p>
+
+      </form>
+      <p>
+         <strong>
+            Not yet registered . <a href="{{url_for('index')}}"> <u>Sign up</u> </a>
+         </strong>
+      </p>
+   </body>
+</html>
